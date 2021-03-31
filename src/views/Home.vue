@@ -22,7 +22,7 @@
 
    <div class="movies-list">
         <div class="movie" v-for="movie in movies" :key="movie.imdbID">
-            <router-link :to="'movie'+movie.imdbID" class="movie-link">
+            <router-link :to="'/movie/'+movie.imdbID" class="movie-link">
                 <div class="product-image">
                   <img :src="movie.Poster" alt="">
                   <div class="type">{{movie.Type}}</div>
